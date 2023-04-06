@@ -23,6 +23,7 @@ class PaginaInicial extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.teal,
+        title: Text("Olá Meu App"),
       ),
       body: Container(),
     );
