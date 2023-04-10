@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: PaginaInicial(),
     );
   }
@@ -22,13 +22,24 @@ class PaginaInicial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text("Olá Meu App"),
+        backgroundColor: Colors.pink[300],
+        title: Text("Olá, Meu App <3"),
       ),
-      body: Container(),
+      body: Container(
+        alignment: Alignment.center,
+        color: Colors.pink[50],
+        child: ElevatedButton(
+          onPressed: () {},
+          child: const Text(
+            "Clique aqui",
+            style: TextStyle(fontSize: 23),
+          ),
+        ),
+      ),
     );
   }
 }
+
 
 
 
@@ -58,6 +69,9 @@ class PaginaInicial extends StatelessWidget {
 // maiusculos e minusculos é pq vc está com utilizando uma classe
 //mais um parametro do scaffold
 // separação de parametro usa virgula
-// o comando termina em ponto e virgula, mas a separação de parametro usa virgula
+// o comando termina em ponto e virgula, mas a separação de parametro usa virgula, CAI NA PROVA!!!!!
 // ponto e virgula para visualizar o comando do return
+// antes dos dois pontos é um parametro.
+// cai na prova, 
+// 
 
