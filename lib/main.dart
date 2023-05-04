@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/pagina_inicial.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,53 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: PaginaInicial(),
     );
   }
 }
 
-class PaginaInicial extends StatelessWidget {
-  const PaginaInicial({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 27, 120, 33),
-        title: Text("WhatsApp"),
-      ),
-      body: ListView(children: [
-        ListTile(
-          title: Text("Grupo da família"),
-          subtitle: Text("Churras quando?😋😋..."),
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(
-                "https://images.unsplash.com/photo-1611516818236-8faa056fb659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
-          ),
-          trailing: Text("23:49"),
-        ),
-        ListTile(
-          title: Text("Fut dos crias ⚽"),
-          subtitle: Text("Muié do Lucas liberou? Ela..."),
-          leading: Icon(
-            Icons.account_circle,
-            size: 48,
-          ),
-          trailing: Text("23:43"),
-        ),
-        ListTile(
-          title: Text("Amor<3"),
-          subtitle: Text("Tá chegando?😡😡..."),
-          leading: Icon(
-            Icons.account_circle,
-            size: 48,
-          ),
-          trailing: Text("15:57"),
-        ),
-      ]),
-    );
-  }
-}
 
 // existem dois widget que nao possuem aparecia: materialApp=base para qualquer app do flutter, quem define o tema é o material app, tem duas coisas principais: o tema e as rotas (esse que estamos usando)
 // passar parametro, igual chamar função
