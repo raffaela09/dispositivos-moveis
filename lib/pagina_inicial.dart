@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/conversas.dart';
+import 'package:myappa/chamada.dart';
+import 'package:myappa/status.dart';
+import '/conversas.dart';
 
 class PaginaInicial extends StatelessWidget {
   const PaginaInicial({super.key});
@@ -34,7 +36,13 @@ class PaginaInicial extends StatelessWidget {
             ),
           ],
         ),
-        body: Conversas(),
+        body: TabBarView(
+          children: [
+            Conversas(),
+            Status(),
+            Chamada(),
+          ],
+        ),
       ),
     );
   }
