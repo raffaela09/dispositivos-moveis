@@ -1,7 +1,8 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import 'package:myappa/chamada.dart';
-import 'package:myappa/status.dart';
-import '/conversas.dart';
+import './chamadas.dart';
+import './status.dart';
+import './conversas.dart';
 
 class PaginaInicial extends StatelessWidget {
   const PaginaInicial({super.key});
@@ -12,7 +13,9 @@ class PaginaInicial extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 27, 120, 33),
+  
+          backgroundColor: Color.fromARGB(255, 56, 127, 107),
+
           title: Text("WhatsApp"),
           bottom: TabBar(
             tabs: [
@@ -22,25 +25,16 @@ class PaginaInicial extends StatelessWidget {
             ],
           ),
           actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.camera_alt_outlined),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.search),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.more_vert),
-            ),
+            IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
           ],
         ),
         body: TabBarView(
           children: [
             Conversas(),
             Status(),
-            Chamada(),
+            Chamadas(),
           ],
         ),
       ),

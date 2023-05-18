@@ -1,36 +1,27 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
-class Status extends StatelessWidget {
-  const Status({super.key});
+class Chamadas extends StatelessWidget {
+  const Chamadas({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: [
         ListTile(
-          title: Text("Meu status"),
-          leading: Icon(Icons.account_circle, size: 48),
-          trailing: Icon(
-            Icons.add,
-          ),
+          title: Text("Criar link de chamadas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+          subtitle: Text("Compartilhe um link para sua chamada do WhatsApp"),
+          leading: CircleAvatar(backgroundColor: Colors.green),
           onTap: () {},
         ),
         ListTile(
-          title: Text("Atualizações recentes", style: TextStyle(color: Color.fromARGB(255, 103, 102, 102), fontWeight: FontWeight.bold,fontSize: 14 ),
+          title: Text("Recentes", style: TextStyle(color: Color.fromARGB(255, 158, 156, 156), fontWeight: FontWeight.bold,fontSize: 14 ),
           ),
         ),
         ListTile(
           title: Row(
             children: [
-                        Text("Whatsapp", 
-          style: TextStyle(
-            color: Color.fromARGB(255, 72, 105, 72),
-          
-            fontWeight: FontWeight.bold,         
-            ),
-          ),
+            Text("Whatsapp", ),
           SizedBox(width: 10,),
           Icon(Icons.verified, color: Colors.green, size: 24,),
          
