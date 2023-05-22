@@ -9,47 +9,73 @@ class Chamadas extends StatelessWidget {
     return ListView(
       children: [
         ListTile(
-          title: Text("Criar link de chamadas", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+          title: Text(
+            "Criar link de chamadas",
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+          ),
           subtitle: Text("Compartilhe um link para sua chamada do WhatsApp"),
           leading: CircleAvatar(backgroundColor: Colors.green),
           onTap: () {},
         ),
         ListTile(
-          title: Text("Recentes", style: TextStyle(color: Color.fromARGB(255, 158, 156, 156), fontWeight: FontWeight.bold,fontSize: 14 ),
+          title: Text(
+            "Recentes",
+            style: TextStyle(
+                color: Color.fromARGB(255, 103, 102, 102),
+                fontWeight: FontWeight.bold,
+                fontSize: 15),
           ),
         ),
         ListTile(
-          title: Row(
-            children: [
-            Text("Whatsapp", ),
-          SizedBox(width: 10,),
-          Icon(Icons.verified, color: Colors.green, size: 24,),
-         
-          
-            ],
-          )
-          
-,
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(
-                "https://cdn.dfg.com.br/itemimages/975740159-bot-para-vender-sozinho-no-wha-t-s-app-15-mil-grupos-9C2J.webp"),
+          title: Text("Ricardão"),
+          subtitle: Row(children: [
+            Icon(
+              Icons.call_made,
+              color: Colors.green,
+            ),
+            Text('18 de maio 19:57'),
+          ]),
+          leading: Icon(Icons.account_circle, size: 48),
+          trailing: Icon(
+            Icons.call,
+            color: Colors.green,
           ),
         ),
         ListTile(
-          title: Text("Fulano"),
+          title: Text("Marcos do fut"),
+          subtitle: Row(children: [
+            Icon(
+              Icons.call_received,
+              color: Colors.red,
+            ),
+            Text('16 de maio 13:52'),
+          ]),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(
                 'https://images.unsplash.com/photo-1682232410297-e04c5e616b31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
           ),
-          trailing: Text("Hoje 13:49"),
+          trailing: Icon(
+            Icons.call,
+            color: Colors.green,
+          ),
         ),
         ListTile(
-          title: Text("Amor"),
+          title: Text("Amor❤️"),
+          subtitle: Row(children: [
+            Icon(
+              Icons.call_received,
+              color: Colors.red,
+            ),
+            Text('(8) 16 de maio 13:30'),
+          ]),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(
                 'https://plus.unsplash.com/premium_photo-1663013666806-d515882eaa30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
           ),
-          trailing: Text("Ontem 00:49"),
+          trailing: Icon(
+            Icons.call,
+            color: Colors.green,
+          ),
         ),
       ],
     );

@@ -18,27 +18,34 @@ class Status extends StatelessWidget {
           onTap: () {},
         ),
         ListTile(
-          title: Text("Atualizações recentes", style: TextStyle(color: Color.fromARGB(255, 103, 102, 102), fontWeight: FontWeight.bold,fontSize: 14 ),
+          title: Text(
+            "Atualizações recentes",
+            style: TextStyle(
+                color: Color.fromARGB(255, 103, 102, 102),
+                fontWeight: FontWeight.bold,
+                fontSize: 14),
           ),
         ),
         ListTile(
           title: Row(
             children: [
-                        Text("Whatsapp", 
-          style: TextStyle(
-            color: Color.fromARGB(255, 72, 105, 72),
-          
-            fontWeight: FontWeight.bold,         
-            ),
-          ),
-          SizedBox(width: 10,),
-          Icon(Icons.verified, color: Colors.green, size: 24,),
-         
-          
+              Text(
+                "Whatsapp",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 72, 105, 72),
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Icon(
+                Icons.verified,
+                color: Colors.green,
+                size: 24,
+              ),
             ],
-          )
-          
-,
+          ),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(
                 "https://cdn.dfg.com.br/itemimages/975740159-bot-para-vender-sozinho-no-wha-t-s-app-15-mil-grupos-9C2J.webp"),
