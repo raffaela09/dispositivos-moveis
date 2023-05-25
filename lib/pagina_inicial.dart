@@ -27,7 +27,10 @@ class PaginaInicial extends StatelessWidget {
           actions: [
             IconButton(onPressed: () {}, icon: Icon(Icons.camera_alt_outlined)),
             IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
+           
+            IconButton(onPressed: () {
+               Navigator.pushNamed(context, '/config');
+            }, icon: Icon(Icons.more_vert))
           ],
         ),
         body: TabBarView(

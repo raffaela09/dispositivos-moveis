@@ -1,9 +1,8 @@
 // ignore_for_file: prefer_const_constructors
-import 'dart:async';
 
 import 'package:flutter/material.dart';
 import './pagina_inicial.dart';
-
+import 'configuracoes.dart';
 void main() {
   runApp(const MeuApp());
 }
@@ -14,7 +13,12 @@ class MeuApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: PaginaInicial()
+        debugShowCheckedModeBanner: false, 
+        routes: {
+          '/': (context) => PaginaInicial(),
+          '/config': (context) => Configuracoes(),
+
+        },
     );
   }
 }
